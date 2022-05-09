@@ -1,0 +1,55 @@
+/* css cua them brand w3c*/
+
+
+/* reset css!*/
+*{
+    padding: 0PX;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* css chung cho toan theme*/
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 100%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*header css*/
+nav{
+    width: 100%;
+    height: 50px;
+    background: #000;
+}
+.navbar{
+    list-style-type: none;
+}
+.navbar-item{
+    display: inline-block;
+    position: relative;
+}
+.navbar-item-link{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0px 16px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.navbar-item-link:hover{
+    color: #333;
+    background-color: rgb(211, 206, 206);
+}
+.dropdown{
+    display: none;
+}
