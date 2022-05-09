@@ -10,12 +10,15 @@
 
 /* css chung cho toan theme*/
 html{
-    font-size: 16px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .main{
     width: 100%;
+}
+.btn{
+    padding: 0px 24px;
 }
 .left{
     float: left;
@@ -35,6 +38,7 @@ nav{
 .navbar-item{
     display: inline-block;
     position: relative;
+    height: 50px;
 }
 .navbar-item-link{
     display: block;
@@ -45,11 +49,52 @@ nav{
     padding: 0px 16px;
     line-height: 50px;
     cursor: pointer;
+    transition: all .25s linear;
 }
 .navbar-item-link:hover{
     color: #333;
-    background-color: rgb(211, 206, 206);
+    background-color: #ccc;
+}
+.btn-search{
+    display: block;
+    height: 100%;
+    line-height: 46px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    transition: all .25s linear;
+    cursor: pointer;
+}
+.btn-search:hover{
+    background-color: rgb(222, 14, 14);
 }
 .dropdown{
     display: none;
+    list-style-type: none;
+    background: #fff;
+    position: absolute;
+    top: 50px;   
+    transition: all .25s linear;
+    width: 160px;
+}
+.navbar-item:hover .dropdown{
+    display: block;
+}
+.dropdown-item{
+    display: block;
+}
+.dropdown-item-link{
+    color: #333;
+    display: block;
+    text-align: left;
+    padding: 0px 8px;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all .25s linear;
+    cursor: pointer;
+}
+.dropdown-item-link:hover{
+    background-color: #ccc;
 }
